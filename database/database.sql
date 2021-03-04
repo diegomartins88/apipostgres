@@ -13,5 +13,5 @@ INSERT INTO users (nome, sobrenome, email) VALUES
 ('Ismael', 'Pontes', 'ismael.pontes@sysdata.com.br'),
 ('Nilda', 'Xaves', 'nilda.xaves@sysdata.com.br')
 
-SELECT *FROM users
+SELECT *FROM transacao
 

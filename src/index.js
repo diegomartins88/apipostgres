@@ -11,5 +11,10 @@ app.use(express.urlencoded({extended: false}));
 // routes
 app.use(require('../routes/rota'));
 
-app.listen(4000);
-console.log('Rodando teste!!!');
+
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log(' Servidor rodando na port %s', port);
+});
+//app.listen(8080);
+//console.log('Rodando teste!!!');
