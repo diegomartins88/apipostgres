@@ -3,14 +3,13 @@ const router = Router();
 
 
 
-const { gettransacao, createUser, getUserById, deleteUser, updateUser } = require('../config/index.config')
+const { getEstabelecimento, createEstabelecimento, getEstabelecimentoById, deleteEstabelecimento, updateEstabelecimento } = require('../config/index.config')
 
-router.get('/transacao', gettransacao);
-router.get('/users/:id', getUserById);
-router.post('/users', createUser);
-router.delete('/users/:id' , deleteUser);
-router.put('/users/:id', updateUser);
-
+router.get('/estabelecimento', getEstabelecimento);
+router.get('/estabelecimento/:cod_estabelecimento', getEstabelecimentoById);
+router.post('/estabelecimento', createEstabelecimento);
+router.delete('/estabelecimento/:cod_estabelecimento' , deleteEstabelecimento);
+router.put('/estabelecimento/:cod_estabelecimento', updateEstabelecimento);
 
 
 module.exports = router;

@@ -1,17 +1,24 @@
+/*
+
+CREATE TABLE estabelecimento(
+	cod_estabelecimento INT PRIMARY KEY,
+	cnpj_estabelcimento INT NOT NULL,
+	razao_social VARCHAR(50) NOT NULL,
+	nome_fantasia VARCHAR(50) NOT NULL
+	);
+
+INSERT INTO estabelecimento (cnpj_estabelcimento, razao_social, nome_fantasia) VALUES
+('', '', ''),
+('', '', ''),
+('', '', ''),
 
 
-CREATE TABLE users(
-	id SERIAL PRIMARY KEY,
-	nome VARCHAR(20) NOT NULL,
-	sobrenome VARCHAR(40) NOT NULL,
-	email VARCHAR (35)
+
+CREATE TABLE endereco(
+	logradouro VARCHAR(40) NOT NULL,
+	numero INT,
+	telefone INT NOT NULL,
+	email VARCHAR(20) 
 );
-
-
-INSERT INTO users (nome, sobrenome, email) VALUES
-('Diego', 'Martins', 'diego.martins@sysdata.com.br'),
-('Ismael', 'Pontes', 'ismael.pontes@sysdata.com.br'),
-('Nilda', 'Xaves', 'nilda.xaves@sysdata.com.br')
-
-SELECT *FROM transacao
+*/
 
